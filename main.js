@@ -1,3 +1,9 @@
+console.log("main.js loaded");
+
+window.addEventListener("load", function() {
+  alert("main.js has been loaded!");
+});
+
 const learningContentTextarea = document.getElementById('learningContent')
 const teachersFeedbackTextarea = document.getElementById('teachersFeedback')
 
