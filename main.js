@@ -12,14 +12,18 @@ teachersFeedbackTextarea.addEventListener('click', saveTeachersFeedback)
 
 window.addEventListener('load', loadSavedContents);
 
+
+
 function saveLearningContent(){
     const learningContent = learningContentTextarea.value
     localStorage.setItem('learningContent', learningContent)
+    console.log(localStorage.getItem(learningContent))
 }
 
 function saveTeachersFeedback() {
     const teachersFeedback = teachersFeedbackTextarea.value;
     localStorage.setItem('teachersFeedback', teachersFeedback);
+    console.log(localStorage.getItem(teachersFeedback))
   }
 
 function loadSavedContents() {
